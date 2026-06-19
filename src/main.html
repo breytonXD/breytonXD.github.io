@@ -2,14 +2,20 @@
 <html lang="en">
   <head>
     <title>breyton</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Jacquarda+Bastarda+9&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <script src="shuffle-text.js" defer></script>
   </head>
 
   <body>
     <header class="site-header">
+      <a class="site-logo" href="main.html" aria-label="Breyton home">
+        <img src="assets/logo.png" alt="Breyton logo">
+      </a>
+
       <nav>
         <a href="#portfolio">portfolio</a>
         <a href="#about">about me</a>
@@ -19,9 +25,13 @@
 
     <main>
       <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="assets/background3.mp4" type="video/mp4">
+        </video>
+
         <div class="hero-content">
-          <h1 class="jacquard-12-regular">BREYTON GOODEN</h1>
-          <p class="mrs-saint-delafield-regular">welcome to my website</p>
+          <h1 class="jacquard-12-regular shuffle-text" data-shuffle-text>BREYTON GOODEN</h1>
+          <p class="mrs-saint-delafield-regular" data-shuffle-text>welcome to my website</p>
           <a href="#portfolio" class="hero-button">view portfolio</a>
         </div>
       </section>
