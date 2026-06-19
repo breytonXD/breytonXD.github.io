@@ -251,7 +251,7 @@ nav a {
   color: #00ff99;
   font-size: clamp(5rem, 15vw, 13rem);
   line-height: 0.8;
-  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.75);
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
 }
 
 .page-hero p {
@@ -275,6 +275,7 @@ nav a {
   color: #00ff99;
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 1rem;
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.75);
 }
 
 .text-block p,
@@ -286,6 +287,24 @@ nav a {
 
 .text-block a {
   color: #00ff99;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 360px);
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-animation {
+  justify-self: end;
+}
+
+.about-animation img {
+  display: block;
+  width: min(100%, 320px);
+  height: auto;
+  filter: drop-shadow(0 0 22px rgba(0, 255, 153, 0.45));
 }
 
 .jacquard-12-regular {
@@ -348,6 +367,15 @@ nav a {
 
   .page-section {
     padding: 2rem 1rem;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-animation {
+    justify-self: center;
   }
 
   .portfolio-list {
